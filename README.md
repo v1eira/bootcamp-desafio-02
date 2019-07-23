@@ -49,41 +49,47 @@ Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma 
 ## Resolução
 
 ### Configurando ambiente
-``$ yarn add express`` <br>
-``$ yarn add nodemon -D`` <br>
-``$ yarn add sucrase nodemon -D`` <br>
-``$ yarn add eslint -D`` <br>
-``$ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D`` <br>
-``$ yarn eslint --init`` <br>
-``$ yarn eslint --fix src --ext .js`` <br>
+```bash
+$ yarn add express
+$ yarn add nodemon -D
+$ yarn add sucrase nodemon -D
+$ yarn add eslint -D
+$ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+$ yarn eslint --init
+$ yarn eslint --fix src --ext .js
+```
 
 Configurar [.eslintrc.js](.eslintrc.js) <br>
 Criar [.prettierrc](.prettierrc) <br>
 Criar [.editorconfig](.editorconfig) <br>
 
 ### Sequelize
-``$ yarn add sequelize`` <br>
-``$ yarn add sequelize-cli -D`` <br>
-``$ yarn add pg pg-hstore`` <br>
+```bash
+$ yarn add sequelize
+$ yarn add sequelize-cli -D
+$ yarn add pg pg-hstore
+```
 
 Criar [.sequelizerc](.sequelizerc)
 
 #### Utilizando Sequelize
 
 ##### Criar migration
-``$ yarn sequelize migration:create=create-users`` (Migration de criação da tabela users)
+```$ yarn sequelize migration:create=create-users``` (Migration de criação da tabela users)
 ##### Executar migrations
-``$ yarn sequelize db:migrate``
+```$ yarn sequelize db:migrate```
 ##### Desfazer migrations
-``$ yarn sequelize db:migrate:undo`` (Desfaz a última migration) <br>
-``$ yarn sequelize db:migrate:undo:all`` (Desfaz todas as migrations)
+```$ yarn sequelize db:migrate:undo``` (Desfaz a última migration) <br>
+```$ yarn sequelize db:migrate:undo:all``` (Desfaz todas as migrations)
 
 ### Adicionais
-``$ yarn add bcryptjs`` <br>
-``$ yarn add jsonwebtoken`` <br>
+```bash
+$ yarn add bcryptjs
+$ yarn add jsonwebtoken
+```
 
 Schema validation: <br>
-``$ yarn add yup`` <br>
+```$ yarn add yup``` <br>
 
 ### Exemplo de funcionamento (Insomnia)
 ![funcionamento](funcionamento.png)
