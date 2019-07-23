@@ -85,4 +85,7 @@ Criar [.sequelizerc](.sequelizerc)
 Schema validation: <br>
 ``$ yarn add yup`` <br>
 
+### Exemplo de funcionamento (Insomnia)
+![funcionamento](funcionamento.png)
+
 Código fonte da resolução do desafio se encontra na pasta [src](/src).
