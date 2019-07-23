@@ -45,3 +45,44 @@ Esse desafio **não precisa ser entregue** e não receberá correção, mas voc�
 Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
 “Não espere para plantar, apenas tenha paciência para colher”!
+
+## Resolução
+
+### Configurando ambiente
+``$ yarn add express`` <br>
+``$ yarn add nodemon -D`` <br>
+``$ yarn add sucrase nodemon -D`` <br>
+``$ yarn add eslint -D`` <br>
+``$ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D`` <br>
+``$ yarn eslint --init`` <br>
+``$ yarn eslint --fix src --ext .js`` <br>
+
+Configurar [.eslintrc.js](.eslintrc.js) <br>
+Criar [.prettierrc](.prettierrc) <br>
+Criar [.editorconfig](.editorconfig) <br>
+
+### Sequelize
+``$ yarn add sequelize`` <br>
+``$ yarn add sequelize-cli -D`` <br>
+``$ yarn add pg pg-hstore`` <br>
+
+Criar [.sequelizerc](.sequelizerc)
+
+#### Utilizando Sequelize
+
+##### Criar migration
+``$ yarn sequelize migration:create=create-users`` (Migration de criação da tabela users)
+##### Executar migrations
+``$ yarn sequelize db:migrate``
+##### Desfazer migrations
+``$ yarn sequelize db:migrate:undo`` (Desfaz a última migration) <br>
+``$ yarn sequelize db:migrate:undo:all`` (Desfaz todas as migrations)
+
+### Adicionais
+``$ yarn add bcryptjs`` <br>
+``$ yarn add jsonwebtoken`` <br>
+
+Schema validation: <br>
+``$ yarn add yup`` <br>
+
+Código fonte da resolução do desafio se encontra na pasta [src](/src).
